@@ -1,0 +1,27 @@
+ 1250  whoami
+ 1251  id
+ 1252  cat /etc/passwd | head
+ 1253  cat /etc/group | head
+ 1254  sudo groupadd devteam
+ 1255  cat /etc/group | grep devteam
+ 1256  sudo useradd -m -g devteam kunaluser
+ 1257  sudo passwd kunaluser
+ 1258  su - kunaluser
+ 1259  ls
+ 1260  day-05-ownership-permissions
+ 1261  mkdir day-05-ownership-permissions
+ 1262  cd day-05-ownership-permissions/
+ 1263  mkdir permission-lab
+ 1264  cd permission-lab/
+ 1265  touch file1.txt
+ 1266  ls -l
+ 1267  sudo chown kunaluser:devteam file1.txt
+ 1268  ls -l
+ 1269  chmod 755 file1.txt
+ 1270  sudo chmod 755 file1.txt
+ 1271  ls -l
+ 1272  chmod 755 file1.txt
+ 1273  chmod 600 file1.txt
+ 1274  sudo chmod 600 file1.txt
+ 1275  ls -l
+kunal@DESKTOP-UCI6K8N:~/chatgpt-devops/day-05-ownership-permissions/permission-lab$
